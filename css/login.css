@@ -1,0 +1,13 @@
+body{
+    height: 100%;
+    background-image: url("../img/397855.jpg");
+}
+
+#telalogin{
+
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
