@@ -9,19 +9,12 @@
 
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Gerenciador de Vendas - Distribuidora Paradise</title>
-
-    <!-- Bootstrap core CSS -->
+    <title>Gerenciador</title>
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom fonts for this template -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
-    <!-- Plugin CSS -->
     <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
     <link href="css/sb-admin.css" rel="stylesheet">
+    <link rel="icon" href="images/23.png" type="image/gif" />
 
   </head>
 
@@ -29,17 +22,17 @@
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
-      <a class="navbar-brand" href="index.html">Distribuidora Paradise</a>
+      <a class="navbar-brand" href="index.html">Gerenciador - AgroTech</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
           <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
-            <a class="nav-link" href="index.html">
+            <a class="nav-link" href="inicio.html">
               <i class="fa fa-fw fa-dashboard"></i>
               <span class="nav-link-text">
-                Dashboard</span>
+              Painel de Controle</span>
             </a>
           </li>
           <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
@@ -58,11 +51,11 @@
             </a>
             <ul class="sidenav-second-level collapse" id="collapseTable">
               <li>
-                <a href="consulta.php">Vendedores</a>
+                <a href="consulta.php">Produtos</a>
               </li>
-              <li>
-                <a href="consulta_cli.php">Clientes</a>
-              </li>
+              <!--<li>
+                <a href="consulta_cli.php"></a>
+              </li>-->
             </ul>
           </li>
 		  
@@ -74,11 +67,11 @@
             </a>
             <ul class="sidenav-second-level collapse" id="collapseComponents">
               <li>
-                <a href="cad_vend.html">Vendedor</a>
+                <a href="cad_vend.html">Produtos</a>
               </li>
-              <li>
+              <!--<li>
                 <a href="cad_cli.php">Cliente</a>
-              </li>
+              </li> -->
             </ul>
           </li>
           <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Example Pages">
@@ -197,12 +190,10 @@
                 </span>
               </div>
             </form
-			<!-- fim do campo de busca -->
-			
           <li class="nav-item">
             <a class="nav-link" data-toggle="modal" data-target="#exampleModal">
               <i class="fa fa-fw fa-sign-out"></i>
-              Logout</a>
+              Sair</a>
           </li>
         </ul>
       </div>
@@ -215,98 +206,14 @@
         <!-- Breadcrumbs -->
         <ol class="breadcrumb">
           <li class="breadcrumb-item">
-            <a href="index.html">Dashboard</a>
+            <a href="inicio.html"></a>
           </li>
           <li class="breadcrumb-item active">Consultas</li>
         </ol>
-		
-		<!-- retirar se não resolver usar -->
-        <!-- Icon Cards -->
-        <div class="row">
-          <div class="col-xl-3 col-sm-6 mb-3">
-            <div class="card text-white bg-primary o-hidden h-100">
-              <div class="card-body">
-                <div class="card-body-icon">
-                  <i class="fa fa-fw fa-comments"></i>
-                </div>
-                <div class="mr-5">
-                  26 New Messages!
-                </div>
-              </div>
-              <a href="#" class="card-footer text-white clearfix small z-1">
-                <span class="float-left">View Details</span>
-                <span class="float-right">
-                  <i class="fa fa-angle-right"></i>
-                </span>
-              </a>
-            </div>
-          </div>
-          <div class="col-xl-3 col-sm-6 mb-3">
-            <div class="card text-white bg-warning o-hidden h-100">
-              <div class="card-body">
-                <div class="card-body-icon">
-                  <i class="fa fa-fw fa-list"></i>
-                </div>
-                <div class="mr-5">
-                  11 New Tasks!
-                </div>
-              </div>
-              <a href="#" class="card-footer text-white clearfix small z-1">
-                <span class="float-left">View Details</span>
-                <span class="float-right">
-                  <i class="fa fa-angle-right"></i>
-                </span>
-              </a>
-            </div>
-          </div>
-          <div class="col-xl-3 col-sm-6 mb-3">
-            <div class="card text-white bg-success o-hidden h-100">
-              <div class="card-body">
-                <div class="card-body-icon">
-                  <i class="fa fa-fw fa-shopping-cart"></i>
-                </div>
-                <div class="mr-5">
-                  123 New Orders!
-                </div>
-              </div>
-              <a href="#" class="card-footer text-white clearfix small z-1">
-                <span class="float-left">View Details</span>
-                <span class="float-right">
-                  <i class="fa fa-angle-right"></i>
-                </span>
-              </a>
-            </div>
-          </div>
-          <div class="col-xl-3 col-sm-6 mb-3">
-            <div class="card text-white bg-danger o-hidden h-100">
-              <div class="card-body">
-                <div class="card-body-icon">
-                  <i class="fa fa-fw fa-support"></i>
-                </div>
-                <div class="mr-5">
-                  13 New Tickets!
-                </div>
-              </div>
-              <a href="#" class="card-footer text-white clearfix small z-1">
-                <span class="float-left">View Details</span>
-                <span class="float-right">
-                  <i class="fa fa-angle-right"></i>
-                </span>
-              </a>
-            </div>
-          </div>
-        </div>
-		<!-- fim da parte a ser retirada se não encontrar utilidade -->
-
-        
-
-        <!-- Example Tables Card -->
-		<!-- colocar dados do banco -->
-		<!-- tabela de vendedores -->
         <div class="card mb-3">
           <div class="card-header">
             <i class="fa fa-table"></i>
-            Tabela de Vendedores
+            Tabela Produtos
           </div>
           <div class="card-body">
             <div class="table-responsive">
@@ -329,14 +236,6 @@
                     <th>Telefone 2</th>
                   </tr>
                 </tfoot>
-                <tbody>
-                  
-				  <!-- consulta do banco usando consulta.php -->
-					<?php include("_php/select_consulta.php");
-					select_table();
-					?>
-					
-                </tbody>
               </table>
             </div>
           </div>
