@@ -1,5 +1,7 @@
 # Site Agronegocio - Agrotech
 
+![AgroTech](logo3.png)
+
 ## Algumas informacoes:
 
 Site desenvolvido na materia de TAI-2 (Trabalho Academico Interdiplinar), 
